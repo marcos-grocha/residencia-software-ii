@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.marcosgrocha.residenciasoft.core.openapi.MeuControllerOpenApi;
 import com.marcosgrocha.residenciasoft.models.entities.MeuUsuario;
 import com.marcosgrocha.residenciasoft.models.repositories.MeuRepository;
 
 @RestController
 @RequestMapping("/usuario")
-public class MeuController {
+public class MeuController implements MeuControllerOpenApi {
     
         // INJEÇÃO DE DEPENDENCIA
     @Autowired
